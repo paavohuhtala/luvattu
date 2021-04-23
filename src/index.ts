@@ -1,0 +1,2 @@
+
+export { props } from "./props"
