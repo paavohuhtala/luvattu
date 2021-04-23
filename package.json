@@ -12,10 +12,10 @@
     "test": "ava"
   },
   "ava": {
-		"typescript": {
-			"rewritePaths": {
-				"src/": "out/"
-			}
-		}
-	}
+    "typescript": {
+      "rewritePaths": {
+        "src/": "out/"
+      }
+    }
+  }
 }
