@@ -2,6 +2,7 @@
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     "outDir": "dist",
+    "alwaysStrict": true,
     "strict": true,
     "target": "ESNext",
     "isolatedModules": true,
