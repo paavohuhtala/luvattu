@@ -2,19 +2,25 @@
   "name": "luvattu",
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
+    "@types/benchmark": "^2",
     "@types/node": "^14.14.41",
     "@yarnpkg/pnpify": "^3.0.0-rc.3",
     "ava": "^3.15.0",
+    "benchmark": "^2.1.4",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
   "scripts": {
     "dev": "tsc --watch",
-    "test": "ava"
+    "test": "ava src/*.test.ts",
+    "bench": "ts-node benchmarks/all.ts"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "ava": {
     "typescript": {
       "rewritePaths": {
-        "src/": "out/"
+        "src/": "dist/"
       }
     }
   }

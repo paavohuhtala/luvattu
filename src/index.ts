@@ -1,5 +1,7 @@
 
 export { props, PropsPromiseError } from "./props"
 
-export { allLimitOrdered } from "./allLimit"
-export type { AllOptions } from "./allLimit"
+export { allUnordered } from "./allUnordered"
+
+export { map, mapUnordered } from "./map"
+export type { MapOptions } from "./map"
